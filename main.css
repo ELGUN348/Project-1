@@ -53,8 +53,8 @@
 }
 
 .hero {
-  display: flex;
-  justify-content: start;
+
+  
   margin-top: 20px;
   gap: 61px;
   height: 680px;
@@ -62,22 +62,15 @@
   background: linear-gradient(hsla(0, 0%, 100%, 0));
 }
 .hero-text {
-
-  max-width: 780px;
+  width: 780px;
   height: 423px;
-}
-.hero-img2{
-  width: 1235px;
-  height: 680px;
-  right: 0px;
-  position: absolute;
-  z-index: -1;
 }
 .hero-img{
   width: 1500px;
    position: absolute;
    right: 0px;
   height: 740px;
+  z-index: -1;
 
 }
 .hero-container {
@@ -238,6 +231,7 @@ font-size: 28px;
   flex-direction: column;
   gap: 20px;
 }
+
 .vector{
   width: 96px;
   opacity: 12%;
@@ -388,10 +382,10 @@ color: rgba(3, 94, 137, 1);
   margin-top: 100px;
   width: 100%;
   height: 432px;
-display: flex;
-align-items: center;
-flex-direction: column;
-gap: 50px;
+ display: flex;
+ align-items: center;
+ flex-direction: column;
+  gap: 50px;
   background-color: rgba(3, 94, 137, 1);
  }
  .footer{
@@ -400,8 +394,6 @@ gap: 50px;
   margin-top: 60px;
   display: flex;
   justify-content: space-between;
-
-
  }
  .swift-h1{
   width: 167px;
@@ -464,7 +456,7 @@ gap: 50px;
  }
 .p-box3{
   width: 142px;
-  height: 104px;
+  height: 65px;
   margin-top: 15px;
   display: flex;
   flex-direction: column;
@@ -472,7 +464,6 @@ gap: 50px;
   color: white;
   font-weight: 400;
 }
-
 .line-1{
   width: 1800px;
   border: 1px solid rgba(182, 230, 255, 1);
@@ -494,16 +485,17 @@ color: white;
   font-size: 16px;
   font-weight: 600;
 }
-@media screen and (max-width:440px) {
+@media screen and (max-width:768px) {
   html,body{
-    font-size: 10px;
+    font-size: 11px;
   }
   .container {
-    width: 430px;
+    max-width: 100%;
   }
   .header-logo{
-    width: 112px;
-    height: 29px;
+  
+    width: 140px;
+    height: 43px;
   }
   .prove{
     padding-inline: 15px;
@@ -514,10 +506,6 @@ color: white;
   .header-btn{
     display: none;
   }
-  .hero-img2{
-    left: 0px;
-    display: flex;
-  }
   .header{
     padding-inline:30px ;
     justify-content: space-between;
@@ -527,14 +515,14 @@ color: white;
     padding-right: 20px;
   }
   .hero-container{
-    width: 300px;
+    max-width: 100%;
     padding-inline:20px ;
     height: 300px;
   
   }
   .hero-h1{
-    width:360px;
-    font-size: 5rem;
+    max-width:100%;
+    font-size: 5.5rem;
   }
   .hero{
     width: 400px;
@@ -544,7 +532,7 @@ color: white;
 
   }
   .hero-items{
-    width: 430px;
+    max-width: 100%;
     margin-top: 20px;
     font-size: 3.8rem;
     gap: 10px;
@@ -556,7 +544,7 @@ color: white;
     font-size: 1.7rem;
   }
   .hero-btn-freequote{
-    margin-top: 20px;
+    margin-top: 50px;
     
   }
   .hero-text{
@@ -571,53 +559,42 @@ color: white;
     text-align: center;
     margin-left: 0px;
   }
-  .hero-img2{
-    width: 0;
-    left:-30%;
-  }
   .hero-img{
-   width: 529px;
+    margin: 50px 20px 20px 0px;
+   max-width: 100%;
     height: 323px;
     position: absolute;
-    object-fit:cover;
-   padding-left: 100px;
-    top: 55%;
-    left:1px;
+    object-fit: fi;
+     top: 45%;
     opacity: 0.4;
     background-image: linear-gradient(45deg,white, white);
   }
   .service-boxes{
-    display: flex;
     margin-right: 50px;
     gap: 16px;
     margin-left: 15px;
   }
   .service-box{
-    height: 240px;
     margin-left: 24px;
-    width: 360px;
+     max-width: 100%;
   }
   .service-box:nth-child(1){
-    /* width: 331px; */
     padding: 20px 4px 0 20px;
   }
   .service-container{
-    width: 400px;
+    max-width: 100%;
   }
-
   .service-main{
+    margin-top: 50px;
+   max-width: 100%;
     display: flex;
-    justify-content: start;
-    margin-left: 75px;
+    flex-direction: column;
+    align-items: center;
     font-size: 5rem;
   }
   .service{
+    max-width: 100%;
     margin-top: 60px;
-  }
-  .service-main span{
-    position: absolute;
-    top: 91%;
-    left: 26%;
   }
   .service-img1{
    margin-top: 12px;
@@ -635,10 +612,13 @@ color: white;
     font-weight: 600;
     color: rgba(109, 109, 109, 1);
   }
+  .service-p{
+  }
   .service-p-c{
+    max-width: 100%;
     margin-top: 0;
     display: flex;
-    justify-content: start;
+ 
   }
   .service-h1{
     width: 306px;
@@ -680,37 +660,47 @@ color: white;
     height: 487px;
   }
   .hightlight{
+    width: 100%;
     margin-left: 8px;
     left: 0;
     margin-top: 50px;
+    display: flex;
+    justify-content: start;
+    
   }
   .hightlight-items{
-    width: 330px;
+    max-width: 700px;
     height: 320px;
     margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: start;
+    margin-left: 10px;
+    padding-left: 30px;
   }
   .van{
-    width:310px;
+    max-width:310px;
     height:158px;
-    top: 83%;
-    left: 3%;
+    flex-wrap: wrap;
+     margin-right: 90px;
   }
   .hightlight-text{
+    max-width: 650px;
     margin-top: 40px;
     margin-left: 10px;
     padding-left: 30px;
-   
   }
   .hightlight-h1{
-    width: 266px;
+   max-width: 300px;
     height: 50px;
-    font-size: 1.8rem;
+    font-size: 2.1rem;
     font-weight: 700;
   }
   .hightlight-p1{
     width: 266px;
     height: 138px;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: 400;
     padding: 0px;
   }
@@ -724,80 +714,90 @@ color: white;
     height: 32px;
     border-radius: 4px;
     padding: 8px 14px;
-    left: 12%;
+  right: 12%;
     top: 59%;
     margin-top: 2px;
   }
   .prove-item{
-    width: 380px;
+    max-width: 100%;
     margin-left: 0px;
     margin-top: 30px;
-    padding: 20px 22px;
+    padding: 20px 30px;
     gap:30px;
-    justify-content: center;
+    justify-content: space-evenly;
   }
   .prove-items{
     padding-left: 10px;
   }
   .managed{
-    width: 147px;
+    width:200px;
     height: 63px;
   }
   .img-1{
+    margin-left: 20px;
     height: 40px;
     width: 146px;
     object-fit: contain;
   }
   .prove-p1{
-    width: 142px;
-    height: 19px;
-    font-size: 1.2rem;
+    width: 200px;
+    height: 30px;
+   padding-right: 20px;
+    font-size: 1.5rem;
     font-weight: 600;
   }
   .clients{
-    width: 147px;
+    width: 200px;
     height: 63px;
   }
   .img-2{
+    margin-left: 20px;
+    height: 40px;
+    width: 125px;
+    object-fit: contain;
+  }
+  .img-3{
+    margin-left: 20px;
     height: 40px;
     width: 125px;
     object-fit: contain;
   }
   .prove-p2{
-    width: 142px;
+    width: 200px;
     height: 19px;
-    font-size: 1.2rem;
+    font-size: 1.7rem;
     font-weight: 600;
   }
   .awards{
-    width: 147px;
+    width: 200px;
     height: 63px;
   }
   .img-4{
+    margin-left: 20px;
     margin-top: 0px;
     height: 40px;
     width: 92px;
     object-fit: contain;
   }
   .prove-p3{
-    width: 142px;
+    width: 200px;
     height: 19px;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 600;
   }
   .prove-p4{
+    margin-left: 20px;
     margin-top: 0px;
-    font-size: 1.3rem;
+    font-size: 1.7rem;
   }
   .delivery{
-    width: 150px;
-    padding-left: 30px;
+    width: 200px;
   }
   .cta-container{
-  width: 390px;
+  max-width: 100%;
   }
   .cta{
-    max-width: 400px;
+    max-width: 100%;
     height: 563px;
     border-radius: 0;
     margin-left: 15px;
@@ -808,20 +808,21 @@ color: white;
     margin-left: 20px;
   }
   .cta-h1{
-    width: 326px;
+    width: 406px;
     height: 108px;
-    font-size: 2.8rem;
+    font-size: 3.5rem;
     font-weight: 600;
   }
   .cta-p1{
-    width: 326px;
+    margin-top: 20px;
+    width: 406px;
     height: 63px;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     color: rgba(77, 76, 82, 1);
   }
   .cta-btn{
-    width: 142px;
-    height: 33px;
+    width: 153px;
+    padding: 16px;
     font-size: 1.4rem;
     font-weight: 400;
   }
@@ -832,28 +833,32 @@ color: white;
    margin-right: 20px;
   }
   .footer-container{
-    width: 400px;
+    max-width: 100%;
     height: 912px;
-    display: flex;
-    flex-direction: column;
     border-radius: 20px;
     gap: 0px;
+    padding-left: 15px;
   }
   .footer{
-    width: 360px;
-    height: 717px;
+    max-width: 90%;
+    height: 700px;
+    display: flex;
+    padding-inline: 10px;
     flex-wrap: wrap;
-
   }
   .legal{
+    margin-top: 20px;
     margin-right: 30px;
   }
   .swift-p{
-    width: 249px;
+    width: 299px;
     height: 48px;
     font-size: 1.8rem;
-    margin-top: 21px;
+    margin-top: 30px;
     font-weight: 500;
+  }
+  .swiftlogix{
+    width: 700px;
   }
   .swift-h1{
     font-size: 4rem;
@@ -862,36 +867,47 @@ color: white;
     font-weight: 500;
   }
   .support{
-    width: 142px;
+   width: 142px;
     height: 148px;
+    margin-top: 20px;
   }
   .p-support{
-    font-size: 2rem;
+    font-size: 2.1rem;
+    font-weight: 700;
+    width: 64px;
+    height: 24px;
+  }
+  .services{
+    height: 360px;
+    margin-top: 20px;
+  }
+  .p-legal{
+    font-size: 2.1rem;
     font-weight: 700;
     width: 64px;
     height: 24px;
   }
   .p-box{
-    width: 142px;
+    width: 502px;
     font-size: 1.4rem;
     font-weight: 400;
   }
   .p-box2{
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 400;
     width: 121px;
     height: 24px;
   }
  .p-box3{
-  margin-top: 40px;
-  width: 141px;
-  height: 228px;
-  font-size: 1.4rem;
+  margin-top: 20px;
+  width: 161px;
+  height: 8px;
+  font-size: 1.5rem;
   font-weight: 400;
   gap: 31px;
  }
  .line-1{
-  width: 400px;
+  max-width: 100%;
  height: 1px;
  }
  .footer-nav{
