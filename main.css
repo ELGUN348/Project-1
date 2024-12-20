@@ -563,12 +563,12 @@ color: white;
     margin-left: 0px;
   }
   .hero-img{
-    margin: 40px 20px 20px 0px;
+    margin: 33px 20px 20px 0px;
    max-width: 100%;
     height: 323px;
     position: absolute;
     object-fit: fill;
-     top: 51%;
+     top: 52%;
     opacity: 0.4;
     background: linear-gradient(45deg,white, white);
   }
@@ -659,16 +659,11 @@ color: white;
     color: rgba(109, 109, 109, 1);
   }
   .hightlight{
-    width: 390px;
-    height: 487px;
-  }
-  .hightlight{
     width: 100%;
-    margin-left: 8px;
     left: 0;
     margin-top: 50px;
     display: flex;
-    justify-content: start;
+    justify-content: center;
   }
   .hightlight-items{
     justify-content: center;
@@ -685,16 +680,15 @@ color: white;
     height:158px;
      margin-right: 90px;
      position: absolute;
-     top: 86%;
-     left: 25%;
+     top: 79%;
+     left: 14%;
   }
   .hightlight-text{
     margin-top: 40px;
- margin-right: 20px;
+ margin-right: 200px;
   }
   .hightlight-h1{
-    border: 1px solid blac;
-   width: 90%;
+   max-width: 768px;
     height: 50px;
     font-size: 1.9rem;
     font-weight: 700;
@@ -718,7 +712,7 @@ color: white;
     padding: 8px 14px;
     margin-top: 5px;
     top: 65%;
-    left: 29%;
+    left: 13%;
   }
   .prove-item{
     max-width: 100%;
@@ -933,4 +927,3 @@ color: white;
   
  }
 }
-
