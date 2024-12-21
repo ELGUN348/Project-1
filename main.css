@@ -53,14 +53,12 @@
   gap: 61px;
   height: 760px;
   width: 100%;
-  background: linear-gradient(hsla(0, 0%, 100%, 0));
 }
 .hero-text {
   width: 70%;
   height: 423px;
 }
 .hero-img{
-  background: rgba(0, 128, 0, 0.3);
   width: 1500px;
    position: absolute;
    right: 0px;
@@ -565,12 +563,11 @@ color: white;
   .hero-img{
     margin: 33px 20px 20px 0px;
    max-width: 100%;
-    height: 323px;
+    height: auto;
     position: absolute;
-    object-fit: fill;
-     top: 52%;
+    object-fit: cover;
+     top: 50%;
     opacity: 0.4;
-    background: linear-gradient(45deg,white, white);
   }
   .service-boxes{
     margin-right: 50px;
@@ -825,8 +822,7 @@ color: white;
     font-weight: 400;
   }
   .cta-img{
-    max-width: 440px;
-    height: 260px;
+    max-width: 100%;
    margin-bottom: 50px;
    margin-right: 20px;
   }
