@@ -606,13 +606,10 @@ color: white;
     font-weight: 600;
     color: rgba(109, 109, 109, 1);
   }
-  .service-p{
-  }
   .service-p-c{
     max-width: 100%;
     margin-top: 0;
     display: flex;
- 
   }
   .service-h1{
     width: 306px;
